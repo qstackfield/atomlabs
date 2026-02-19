@@ -22,7 +22,7 @@ The stack is complete. The work now is visibility, adoption, and ecosystem build
 ## Near Term - Visibility and Validation
 
 **Standards engagement**  
-Submit LCAC and RIS for consideration to NIST, ISO, and AI governance bodies as the field moves toward formal AI reasoning standards. The frameworks are designed to complement existing structures — this is a natural extension of work already underway at NIST AI RMF and the EU AI Act implementation level.
+Submit LCAC and RIS for consideration to NIST, ISO, and AI governance bodies as the field moves toward formal AI reasoning standards. The frameworks are designed to complement existing structures - this is a natural extension of work already underway at NIST AI RMF and the EU AI Act implementation level.
 
 **Hackathons**  
 Continue submitting ABE and related concepts to AI safety, governance, and infrastructure hackathons. Each submission is an independent validation of the thesis and expands the network of people who understand what this work does.
