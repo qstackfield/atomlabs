@@ -19,7 +19,7 @@ Atom Labs is his applied research effort at the intersection of cybersecurity pr
 ORCID provides a persistent, unique researcher identifier linking all published work to a verified academic identity.
 
 **Zenodo Profile:** [zenodo.org/search?q=stackfield](https://zenodo.org/search?q=stackfield)  
-All published frameworks are archived on Zenodo - CERN's open-access research repository — with permanent DOIs and timestamped records.
+All published frameworks are archived on Zenodo - CERN's open-access research repository - with permanent DOIs and timestamped records.
 
 ---
 
@@ -33,7 +33,7 @@ All published frameworks are archived on Zenodo - CERN's open-access research re
 | **Archive** | Zenodo (CERN) |
 | **ORCID Linked** | Yes - [0009-0002-7377-4165](https://orcid.org/0009-0002-7377-4165) |
 | **Status** | Published, citable, timestamped |
-| **Medium article** | [Beyond Zero Trust — Introducing LCAC](https://medium.com/@qstackfield/beyond-zero-trust-introducing-lcac-least-context-access-control-e36e07731039) |
+| **Medium article** | [Beyond Zero Trust - Introducing LCAC](https://medium.com/@qstackfield/beyond-zero-trust-introducing-lcac-least-context-access-control-e36e07731039) |
 
 The Zenodo publication establishes a permanent, timestamped, citable academic record of the LCAC framework. This constitutes prior art documentation for all LCAC concepts, metrics, architecture, and enforcement model.
 
