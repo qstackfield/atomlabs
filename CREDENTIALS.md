@@ -32,7 +32,7 @@ All published frameworks are archived on Zenodo - CERN's open-access research re
 | **DOI** | [10.5281/zenodo.17458835](https://doi.org/10.5281/zenodo.17458835) |
 | **Archive** | Zenodo (CERN) |
 | **ORCID Linked** | Yes - [0009-0002-7377-4165](https://orcid.org/0009-0002-7377-4165) |
-| **Status** | Published, citable, timestamped |
+| ABE Architecture | Patent | Provisional filed | US 63/958,209 · January 11, 2026 |
 | **Medium article** | [Beyond Zero Trust - Introducing LCAC](https://medium.com/@qstackfield/beyond-zero-trust-introducing-lcac-least-context-access-control-e36e07731039) |
 
 The Zenodo publication establishes a permanent, timestamped, citable academic record of the LCAC framework. This constitutes prior art documentation for all LCAC concepts, metrics, architecture, and enforcement model.
@@ -58,7 +58,7 @@ The RIS portal and GitHub repository establish public, timestamped authorship of
 |-------|--------|
 | **Inspection site** | [qstackfield.github.io/authority-before-execution](https://qstackfield.github.io/authority-before-execution) |
 | **Formal invariant** | ABE-EXEC-001 (documented, timestamped, public) |
-| **Patent status** | Provisional application filed - System and Method for Authority-Before-Execution Governance |
+| **Patent status** | US Provisional No. 63/958,209 · Filed January 11, 2026 · System and Method for Authority-Before-Execution Governance |
 | **Hackathon proof** | Two independent submissions validating the thesis |
 
 The GitHub Pages inspection site, formal invariant documentation, and hackathon submissions establish timestamped public authorship and independent validation of the ABE concept.
