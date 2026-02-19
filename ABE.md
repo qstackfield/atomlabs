@@ -1,4 +1,4 @@
-# ABE — Authority Before Execution
+# ABE - Authority Before Execution
 
 **Execution-Time Governance for Autonomous Agents**
 
@@ -15,7 +15,7 @@ If explicit authority is not present, valid, and in scope
 at execution time, the state transition must not occur.
 ```
 
-This is not a guideline. It is not a policy recommendation. It is a formal invariant that either holds or does not — and the system proves it with runtime artifacts and boundary traces, not post-hoc interpretation.
+This is not a guideline. It is not a policy recommendation. It is a formal invariant that either holds or does not - and the system proves it with runtime artifacts and boundary traces, not post-hoc interpretation.
 
 ---
 
@@ -33,7 +33,7 @@ These approaches share a fundamental weakness: **they do not govern the moment o
 
 An agent can pass every pre-execution filter, generate a perfectly reasonable-sounding intent, and still execute an action that should never have been permitted. By the time post-hoc review identifies the problem, the state change has already occurred. It is irreversible.
 
-ABE addresses this by enforcing governance at the **commit point** — synchronously, before any state transition occurs, independently of model confidence or output characteristics.
+ABE addresses this by enforcing governance at the **commit point** - synchronously, before any state transition occurs, independently of model confidence or output characteristics.
 
 ---
 
@@ -64,7 +64,7 @@ Proposal
    Trace        Trace
 ```
 
-The boundary is enforced synchronously at the commit point. No downstream process can override it. The enforcement result — permit or block — is captured as an immutable artifact regardless of outcome.
+The boundary is enforced synchronously at the commit point. No downstream process can override it. The enforcement result - permit or block - is captured as an immutable artifact regardless of outcome.
 
 ---
 
@@ -72,11 +72,11 @@ The boundary is enforced synchronously at the commit point. No downstream proces
 
 Three conditions must be simultaneously true at execution time for a state transition to be permitted:
 
-**Authority present** — Explicit authority exists for this action. Not implied. Not inferred from intent. Explicitly granted.
+**Authority present** - Explicit authority exists for this action. Not implied. Not inferred from intent. Explicitly granted.
 
-**Scope valid** — The authority covers this specific action, in this specific context, for this specific agent. Authority granted for one scope does not transfer to another.
+**Scope valid** - The authority covers this specific action, in this specific context, for this specific agent. Authority granted for one scope does not transfer to another.
 
-**Not expired** — The authority is currently valid. Time-bounded authority that has elapsed is treated identically to absent authority.
+**Not expired** - The authority is currently valid. Time-bounded authority that has elapsed is treated identically to absent authority.
 
 If any condition fails, the action does not happen.
 
@@ -131,9 +131,9 @@ The ABE invariant has three formal properties that distinguish it from advisory 
 
 **Synchronous** — Enforcement occurs in the request path, not asynchronously. There is no window between the enforcement check and the execution attempt.
 
-**Independent** — Enforcement does not depend on model confidence, output quality, or any property of the model's reasoning. Authority is either present or it is not.
+**Independent** - Enforcement does not depend on model confidence, output quality, or any property of the model's reasoning. Authority is either present or it is not.
 
-**Fail-closed** — In the absence of explicit authority, the default outcome is block, not allow. The system cannot be bypassed by omission.
+**Fail-closed** - In the absence of explicit authority, the default outcome is block, not allow. The system cannot be bypassed by omission.
 
 ---
 
