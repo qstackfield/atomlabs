@@ -52,13 +52,13 @@ The RIS portal and GitHub repository establish public, timestamped authorship of
 
 ---
 
-### ABE — Authority Before Execution
+### ABE - Authority Before Execution
 
 | Field | Detail |
 |-------|--------|
 | **Inspection site** | [qstackfield.github.io/authority-before-execution](https://qstackfield.github.io/authority-before-execution) |
 | **Formal invariant** | ABE-EXEC-001 (documented, timestamped, public) |
-| **Patent status** | Provisional application filed — System and Method for Authority-Before-Execution Governance |
+| **Patent status** | Provisional application filed - System and Method for Authority-Before-Execution Governance |
 | **Hackathon proof** | Two independent submissions validating the thesis |
 
 The GitHub Pages inspection site, formal invariant documentation, and hackathon submissions establish timestamped public authorship and independent validation of the ABE concept.
