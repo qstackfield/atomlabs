@@ -1,8 +1,8 @@
-# RIS — Reasoning Integrity Standard
+# RIS - Reasoning Integrity Standard
 
 **The Global Reasoning Integrity Standard for the Autonomous Age**
 
-*Developed and maintained by Atom Labs — Standards Division*  
+*Developed and maintained by Atom Labs - Standards Division*  
 *Live portal: [ris.atomlabs.app](https://ris.atomlabs.app)*  
 *Repository: [github.com/qstackfield/ris-standard](https://github.com/qstackfield/ris-standard)*
 
@@ -149,12 +149,12 @@ RIS is explicitly designed to complement, not replace:
 
 ## Adoption Path
 
-1. **Internal Analysis** — Review the standard, levels, and measurement framework
-2. **Pilot Evaluation** — Run RIS evaluations against internal systems using the benchmark guide
-3. **Establish Internal Targets** — Define required RIS levels per use case
-4. **Integrate with Governance** — Link RIS results with model registries, incident management, and vendor review
-5. **Continuous Evaluation** — Extend into CI/CD and runtime via LCAC and the Governor
-6. **Certification (optional)** — Engage Atom Labs for RIS Certification and audit-grade scorecards
+1. **Internal Analysis** - Review the standard, levels, and measurement framework
+2. **Pilot Evaluation** - Run RIS evaluations against internal systems using the benchmark guide
+3. **Establish Internal Targets** - Define required RIS levels per use case
+4. **Integrate with Governance** - Link RIS results with model registries, incident management, and vendor review
+5. **Continuous Evaluation** - Extend into CI/CD and runtime via LCAC and the Governor
+6. **Certification (optional)** - Engage Atom Labs for RIS Certification and audit-grade scorecards
 
 ---
 
@@ -185,7 +185,7 @@ https://ris.atomlabs.app
 
 ## Contact
 
-**Atom Labs — Standards Division**  
+**Atom Labs - Standards Division**  
 Email: RIS@atomlabs.app  
 GitHub: [github.com/qstackfield](https://github.com/qstackfield)
 
