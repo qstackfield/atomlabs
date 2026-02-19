@@ -129,7 +129,7 @@ In the ATOM platform, ABE enforcement is implemented through the Execution Gate 
 
 The ABE invariant has three formal properties that distinguish it from advisory governance systems:
 
-**Synchronous** — Enforcement occurs in the request path, not asynchronously. There is no window between the enforcement check and the execution attempt.
+**Synchronous** - Enforcement occurs in the request path, not asynchronously. There is no window between the enforcement check and the execution attempt.
 
 **Independent** - Enforcement does not depend on model confidence, output quality, or any property of the model's reasoning. Authority is either present or it is not.
 
