@@ -1,4 +1,4 @@
- RIS — Reasoning Integrity Standard
+# RIS — Reasoning Integrity Standard
 
 **The Global Reasoning Integrity Standard for the Autonomous Age**
 
