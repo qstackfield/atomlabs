@@ -7,9 +7,9 @@
 
 ## About
 
-Quinton Stackfield is a cybersecurity architect and AI governance researcher with two decades of experience across defense, intelligence, and enterprise security environments. His background spans the Pentagon, NASA, the Department of Defense, and Palo Alto Networks.
+Quinton Stackfield is a cybersecurity architect and AI governance researcher with two decades of experience across defense, intelligence, and enterprise security environments. His background spans the Department of Defense and private sector.
 
-Atom Labs is his applied research effort at the intersection of cybersecurity principles and autonomous AI governance — bringing the discipline and rigor of enterprise security architecture to the emerging field of cognitive AI systems.
+Atom Labs is his applied research effort at the intersection of cybersecurity principles and autonomous AI governance -bringing the discipline and rigor of enterprise security architecture to the emerging field of cognitive AI systems.
 
 ---
 
