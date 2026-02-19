@@ -70,7 +70,7 @@ The execution spine. Manages multi-step agent workflows with deterministic polic
 Evaluates every reasoning event against the active governance policy set. Policies are defined as code (JSON), versioned, and auditable. Policy violations are classified by severity and trigger configurable enforcement responses.
 
 ### Provider Router
-Universal abstraction across every AI provider. ATOM supports all major cloud providers and local models through a single contract interface — enabling governance without vendor lock-in.
+Universal abstraction across every AI provider. ATOM supports all major cloud providers and local models through a single contract interface - enabling governance without vendor lock-in.
 
 ### Enforcement State Machine
 Manages enforcement posture across four modes: Shadow (observe only), Warn (flag and continue), Block (prevent execution), and Emergency (full lockdown). Enforcement mode is tenant-configurable and Redis-backed for sub-millisecond state resolution.
