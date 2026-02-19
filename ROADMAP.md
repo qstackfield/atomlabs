@@ -47,7 +47,7 @@ Release a lightweight, open reference implementation of the LCAC cognitive bound
 Deepen the provider ecosystem. Native integration packages for the major AI orchestration frameworks, enabling ATOM governance without a full platform deployment.
 
 **Enterprise Pilot Program**  
-Structured pilot engagements with organizations in financial services, healthcare, and defense — the three verticals where reasoning integrity failures carry the highest consequence.
+Structured pilot engagements with organizations in financial services, healthcare, and defense - the three verticals where reasoning integrity failures carry the highest consequence.
 
 ---
 
