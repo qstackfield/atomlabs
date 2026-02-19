@@ -41,7 +41,7 @@ Begin engaging the AI governance and AI safety communities on LinkedIn and GitHu
 Define a formal RIS Certification path for organizations and vendors. Structured similarly to SOC 2 or ISO 27001 audit engagements - producing a scored, auditable RIS report that organizations can use for procurement, compliance, and insurance purposes.
 
 **Open Reference Implementation**  
-Release a lightweight, open reference implementation of the LCAC cognitive boundary model and the ABE enforcement gate. Designed to run alongside any AI framework — LangChain, LlamaIndex, AutoGen, CrewAI. Governance that integrates, not replaces.
+Release a lightweight, open reference implementation of the LCAC cognitive boundary model and the ABE enforcement gate. Designed to run alongside any AI framework - LangChain, LlamaIndex, AutoGen, CrewAI. Governance that integrates, not replaces.
 
 **Provider Integrations**  
 Deepen the provider ecosystem. Native integration packages for the major AI orchestration frameworks, enabling ATOM governance without a full platform deployment.
