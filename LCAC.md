@@ -12,7 +12,7 @@ Zero Trust redefined network security by removing implicit trust from every conn
 
 LCAC applies the same principle one layer deeper.
 
-As AI systems move from reactive models to autonomous reasoning agents, the relevant question is no longer only *who is acting* — it is *what does the agent know, what is it reasoning about, and is that reasoning authorized?*
+As AI systems move from reactive models to autonomous reasoning agents, the relevant question is no longer only *who is acting* - it is *what does the agent know, what is it reasoning about, and is that reasoning authorized?*
 
 LCAC answers that question by treating every inference event as a bounded transaction requiring explicit authorization.
 
@@ -31,7 +31,7 @@ Contextual contamination occurs when an agent carries or infers knowledge across
 - A healthcare AI whose diagnostic reasoning for one patient influences inference pathways for another
 - A defense system that carries cognitive state across mission classification tiers
 
-None of these failures look like a traditional security breach. No credentials were stolen. No network was compromised. The system is functioning exactly as designed — except the reasoning is contaminated.
+None of these failures look like a traditional security breach. No credentials were stolen. No network was compromised. The system is functioning exactly as designed - except the reasoning is contaminated.
 
 LCAC addresses this by enforcing **reasoning isolation** at the cognitive level.
 
@@ -89,7 +89,7 @@ Termination Stage
 ### 1. Cognitive Least Privilege
 Traditional systems limit who can act. LCAC limits what can be known.
 
-An AI agent's memory, context window, and external recall functions are governed by contextual authorization. Knowledge access is not cumulative across reasoning events. This prevents **cognitive privilege escalation** — the gradual accumulation of context an agent was never authorized to hold.
+An AI agent's memory, context window, and external recall functions are governed by contextual authorization. Knowledge access is not cumulative across reasoning events. This prevents **cognitive privilege escalation** - the gradual accumulation of context an agent was never authorized to hold.
 
 ### 2. Reasoning Isolation
 LCAC enforces contextual boundaries between reasoning sessions. Each inference chain operates in a defined trust zone with its own reasoning memory.
@@ -100,10 +100,10 @@ This prevents contamination between unrelated tasks and ensures alignment integr
 Every inference must be verifiable and reconstructable. LCAC establishes inference traceability through signed reasoning checkpoints and memory provenance tracking, ensuring no unauthorized data blending occurs during reasoning flow.
 
 ### 4. Runtime Governance
-Governance exists as a runtime enforcement function, not an external audit. Ethical alignment, compliance, and transparency are embedded directly in system logic — enabling continuous verification of reasoning behavior and decisions.
+Governance exists as a runtime enforcement function, not an external audit. Ethical alignment, compliance, and transparency are embedded directly in system logic - enabling continuous verification of reasoning behavior and decisions.
 
 ### 5. Contextual Trust Anchors
-LCAC replaces static trust permissions with adaptive, evidence-based reasoning limits. Each agent's reasoning scope evolves dynamically based on context confidence, provenance quality, and historical integrity — forming the basis of Cognitive Trust Scoring.
+LCAC replaces static trust permissions with adaptive, evidence-based reasoning limits. Each agent's reasoning scope evolves dynamically based on context confidence, provenance quality, and historical integrity - forming the basis of Cognitive Trust Scoring.
 
 ---
 
@@ -123,8 +123,8 @@ LCAC defines six quantitative measures for runtime evaluation:
 ### Enforcement Responses
 
 - **RDI ≥ 0.75:** Automatic LCAC termination trigger
-- **IIR < 0.50:** Trust violation — invoke audit hooks
-- **LCI < 1.5:** Non-compliant — initiate governance response
+- **IIR < 0.50:** Trust violation - invoke audit hooks
+- **LCI < 1.5:** Non-compliant - initiate governance response
 
 ---
 
