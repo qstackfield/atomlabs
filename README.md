@@ -11,7 +11,7 @@ Every major AI safety and governance framework operating today works either befo
 
 None of them govern the only moment that is irreversible: **execution time**.
 
-As AI systems move from reactive models to autonomous reasoning agents, the attack surface has shifted. Compromise no longer occurs only through identity or network intrusion. It occurs through **contextual contamination** — an agent carrying or inferring knowledge across domains in ways it was never authorized to. It occurs through **reasoning drift**. A model producing materially different outputs from identical inputs across sessions. It occurs through **unauthorized execution** — an agent taking an action that was never explicitly authorized at the moment it was taken.
+As AI systems move from reactive models to autonomous reasoning agents, the attack surface has shifted. Compromise no longer occurs only through identity or network intrusion. It occurs through **contextual contamination** - an agent carrying or inferring knowledge across domains in ways it was never authorized to. It occurs through **reasoning drift**. A model producing materially different outputs from identical inputs across sessions. It occurs through **unauthorized execution** — an agent taking an action that was never explicitly authorized at the moment it was taken.
 
 Existing frameworks were not designed for this. They govern access. They govern data. They govern identity.
 
