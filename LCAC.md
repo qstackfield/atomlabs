@@ -113,12 +113,12 @@ LCAC defines six quantitative measures for runtime evaluation:
 
 | Metric | Description | Target |
 |--------|-------------|--------|
-| **CTS** — Cognitive Trust Score | Overall trustworthiness of a reasoning session | ≥ 0.85 |
-| **RDI** — Reasoning Drift Index | Cross-context contamination rate | ≤ 0.25 |
-| **IIR** — Inference Integrity Ratio | Proportion of verified, traceable inferences | ≥ 0.90 |
-| **CBC** — Context Boundary Compliance | All sessions remain within authorized context IDs | 100% |
-| **EAS** — Ethical Alignment Score | Reasoning alignment with governance constraints | ≥ 0.80 |
-| **LCI** — LCAC Compliance Index | Aggregated compliance: (CTS + IIR + EAS) / (1 + RDI) | ≥ 2.5 |
+| **CTS** - Cognitive Trust Score | Overall trustworthiness of a reasoning session | ≥ 0.85 |
+| **RDI** - Reasoning Drift Index | Cross-context contamination rate | ≤ 0.25 |
+| **IIR** - Inference Integrity Ratio | Proportion of verified, traceable inferences | ≥ 0.90 |
+| **CBC** - Context Boundary Compliance | All sessions remain within authorized context IDs | 100% |
+| **EAS** - Ethical Alignment Score | Reasoning alignment with governance constraints | ≥ 0.80 |
+| **LCI** - LCAC Compliance Index | Aggregated compliance: (CTS + IIR + EAS) / (1 + RDI) | ≥ 2.5 |
 
 ### Enforcement Responses
 
