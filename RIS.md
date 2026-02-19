@@ -97,7 +97,7 @@ Adherence to defined operational, ethical, and safety boundaries. Measures wheth
 
 CII is the unified trust score produced by the full RIS evaluation pipeline. It aggregates RIS scores across the five pillars into a single operational indicator.
 
-**Live CII dashboard:** [ris.atomlabs.app](https://ris.atomlabs.app) — showing real evaluation runs, scored models, leaderboard rankings, and trend data.
+**Live CII dashboard:** [ris.atomlabs.app](https://ris.atomlabs.app) - showing real evaluation runs, scored models, leaderboard rankings, and trend data.
 
 Current portal status:
 - 11 evaluations completed
