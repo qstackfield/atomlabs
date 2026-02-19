@@ -95,7 +95,7 @@ This background directly informs the Atom Labs thesis: the same rigor applied to
 | LCAC Framework | Published research | Live | Zenodo DOI + ORCID timestamp |
 | RIS Standard | Published standard | Live | GitHub + portal timestamp |
 | ABE Invariant | Published concept | Live | GitHub Pages timestamp |
-| ABE Architecture | Patent | Provisional filed | Patent application date |
+| ABE Architecture | Patent | Provisional filed | US 63/958,209 · January 11, 2026 |
 | ATOM Platform | Proprietary software | Production | Deployment + audit records |
 
 ---
