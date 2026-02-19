@@ -31,14 +31,14 @@ Continue submitting ABE and related concepts to AI safety, governance, and infra
 Expand the Zenodo record with additional papers on LCAC, RIS measurement methodology, and the formal properties of ABE. Build the academic citation trail.
 
 **Community**  
-Begin engaging the AI governance and AI safety communities on LinkedIn and GitHub. The RIS standard and the LCAC framework are designed to be adopted independently — not just as part of ATOM. Community engagement around the standards accelerates adoption of the platform.
+Begin engaging the AI governance and AI safety communities on LinkedIn and GitHub. The RIS standard and the LCAC framework are designed to be adopted independently - not just as part of ATOM. Community engagement around the standards accelerates adoption of the platform.
 
 ---
 
 ## Medium Term - Ecosystem and Integration
 
 **RIS Certification Program**  
-Define a formal RIS Certification path for organizations and vendors. Structured similarly to SOC 2 or ISO 27001 audit engagements — producing a scored, auditable RIS report that organizations can use for procurement, compliance, and insurance purposes.
+Define a formal RIS Certification path for organizations and vendors. Structured similarly to SOC 2 or ISO 27001 audit engagements - producing a scored, auditable RIS report that organizations can use for procurement, compliance, and insurance purposes.
 
 **Open Reference Implementation**  
 Release a lightweight, open reference implementation of the LCAC cognitive boundary model and the ABE enforcement gate. Designed to run alongside any AI framework — LangChain, LlamaIndex, AutoGen, CrewAI. Governance that integrates, not replaces.
@@ -55,7 +55,7 @@ Structured pilot engagements with organizations in financial services, healthcar
 
 **The goal is for ATOM to become infrastructure** - the governance layer that organizations deploying autonomous AI don't build themselves, the same way they don't build their own firewalls or identity providers.
 
-Cognitive security will become a standard enterprise requirement. The question is who builds the standard. The Atom Labs thesis is that the right foundation is a published, citable, auditable standard — LCAC and RIS — backed by a running platform with real production history.
+Cognitive security will become a standard enterprise requirement. The question is who builds the standard. The Atom Labs thesis is that the right foundation is a published, citable, auditable standard - LCAC and RIS - backed by a running platform with real production history.
 
 **Potential paths:**
 - Standalone enterprise SaaS - cognitive governance as a managed service
