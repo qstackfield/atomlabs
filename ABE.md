@@ -5,6 +5,7 @@
 **Inspection site: [qstackfield.github.io/authority-before-execution](https://qstackfield.github.io/authority-before-execution)**
 
 **Medium:** [Why AI Safety Lives in the Wrong Place](https://medium.com/p/5a8dbe38cc78)
+
 ---
 
 ## The Invariant
