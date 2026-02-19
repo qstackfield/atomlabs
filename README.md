@@ -7,7 +7,7 @@ Governing what AI systems know, reason, and execute.
 
 ## The Problem
 
-Every major AI safety and governance framework operating today works either before or after execution — intent filtering, prompt analysis, policy scoring, post-hoc review, logs and dashboards.
+Every major AI safety and governance framework operating today works either before or after execution - intent filtering, prompt analysis, policy scoring, post-hoc review, logs and dashboards.
 
 None of them govern the only moment that is irreversible: **execution time**.
 
