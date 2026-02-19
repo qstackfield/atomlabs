@@ -65,7 +65,7 @@ RIS defines five integrity levels (RIS-0 through RIS-4), a measurement framework
 
 ---
 
-### ABE — Authority Before Execution
+### ABE - Authority Before Execution
 *Governing what AI systems can execute*
 
 ABE enforces a single invariant at the only moment that matters:
@@ -83,7 +83,7 @@ This is not intent filtering. This is not prompt hygiene. This is an execution b
 
 ---
 
-### ATOM — The Cognitive Operating System
+### ATOM - The Cognitive Operating System
 *The platform that operationalizes LCAC, RIS, and ABE*
 
 ATOM is the production runtime. A multi-tenant, provider-agnostic governance platform that wraps every AI call - cloud or local - in the full cognitive security stack.
