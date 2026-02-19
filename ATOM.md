@@ -88,7 +88,7 @@ ATOM's provider router supports every major AI provider and local execution envi
 **Local:** llama.cpp / GGUF · Ollama · vLLM · ONNX  
 **Dynamic:** Local model pool with LRU swap and file-based directory management
 
-Shadow model execution runs a secondary provider in parallel to detect silent vendor model updates — a critical capability for organizations where model behavior changes are a compliance event.
+Shadow model execution runs a secondary provider in parallel to detect silent vendor model updates - a critical capability for organizations where model behavior changes are a compliance event.
 
 ---
 
