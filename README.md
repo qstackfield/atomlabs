@@ -44,9 +44,6 @@ Every inference event is a bounded transaction. LCAC verifies cognitive integrit
 
 **Core principles:** Cognitive Least Privilege · Reasoning Isolation · Cognitive Integrity · Runtime Governance · Contextual Trust Anchors
 
-**Published:** [Zenodo DOI: 10.5281/zenodo.17458835](https://doi.org/10.5281/zenodo.17458835)  
-**ORCID:** [0009-0002-7377-4165](https://orcid.org/0009-0002-7377-4165)  
-**Medium:** [Beyond Zero Trust - Introducing LCAC](https://medium.com/@qstackfield/beyond-zero-trust-introducing-lcac-least-context-access-control-e36e07731039)
 
 ---
 
