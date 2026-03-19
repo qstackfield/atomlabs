@@ -155,7 +155,7 @@ Building the governance infrastructure that autonomous AI systems require to ope
 **ORCID:** [0009-0002-7377-4165](https://orcid.org/0009-0002-7377-4165)  
 **Zenodo:** [DOI 10.5281/zenodo.17458835](https://doi.org/10.5281/zenodo.17458835)
 
-**ResearchGate:** (https://www.researchgate.net/profile/Quinton-Stackfield)
+**ResearchGate:** https://www.researchgate.net/profile/Quinton-Stackfield
 
 ---
 
