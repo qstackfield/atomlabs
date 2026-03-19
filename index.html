@@ -1,1 +1,341 @@
+<!DOCTYPE html>
 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atom Labs - Cognitive Control Plane for Governed AI</title>
+<meta name="description" content="Atom Labs builds pre-execution AI governance infrastructure. Authority-Before-Execution. LCAC. ATOM. RIS v1.0. Patent Pending US 63/958,209.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy:   #080c18;
+  --deep:   #0b1020;
+  --card:   #0e1526;
+  --blue:   #2563eb;
+  --bright: #3b82f6;
+  --glow:   #60a5fa;
+  --white:  #f1f5f9;
+  --muted:  #8da0bc;
+  --dim:    #3d5068;
+  --border: rgba(59,130,246,0.12);
+  --mono: 'DM Mono', monospace;
+  --sans: 'Syne', sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--navy); color: var(--white); font-family: var(--sans); min-height: 100vh; overflow-x: hidden; }
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: linear-gradient(rgba(37,99,235,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(37,99,235,0.035) 1px, transparent 1px);
+  background-size: 52px 52px;
+  pointer-events: none; z-index: 0;
+}
+body::after {
+  content: '';
+  position: fixed; top: -30vh; left: 50%; transform: translateX(-50%);
+  width: 1000px; height: 700px;
+  background: radial-gradient(ellipse, rgba(37,99,235,0.10) 0%, transparent 68%);
+  pointer-events: none; z-index: 0;
+}
+
+/* NAV */
+nav {
+position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+display: flex; align-items: center; justify-content: space-between;
+padding: 18px 52px;
+background: rgba(8,12,24,0.85); backdrop-filter: blur(20px);
+border-bottom: 1px solid var(–border);
+}
+.nav-logo { display: flex; align-items: center; gap: 12px; }
+/* LOGO: save your logo file as logo.png in the same folder as index.html */
+.nav-logo img { height: 32px; width: auto; display: block; }
+.nav-wordmark { font-family: var(–sans); font-weight: 800; font-size: 17px; letter-spacing: 0.10em; color: var(–white); text-transform: uppercase; }
+.nav-wordmark span { color: var(–bright); }
+.nav-links { display: flex; gap: 36px; list-style: none; align-items: center; }
+.nav-links a { font-family: var(–mono); font-size: 12px; color: var(–muted); text-decoration: none; letter-spacing: 0.06em; transition: color 0.2s; }
+.nav-links a:hover { color: var(–bright); }
+.nav-links .nav-cta { color: var(–bright); border: 1px solid var(–border); padding: 7px 16px; transition: all 0.2s; }
+.nav-links .nav-cta:hover { background: rgba(37,99,235,0.12); border-color: var(–bright); color: var(–white); }
+
+/* HERO */
+.hero {
+position: relative; z-index: 1;
+min-height: 100vh;
+display: flex; flex-direction: column; align-items: center; justify-content: center;
+text-align: center; padding: 140px 24px 100px;
+}
+.hero-badge {
+display: inline-flex; align-items: center; gap: 8px;
+font-family: var(–mono); font-size: 11px; color: var(–bright);
+letter-spacing: 0.14em; text-transform: uppercase;
+border: 1px solid var(–border); background: rgba(37,99,235,0.07);
+padding: 7px 18px; margin-bottom: 48px;
+animation: fadeUp 0.7s ease both;
+}
+.dot { width: 6px; height: 6px; background: var(–bright); border-radius: 50%; animation: blink 2.4s infinite; }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
+.hero h1 {
+font-size: clamp(44px, 7.5vw, 92px); font-weight: 800;
+line-height: 0.96; letter-spacing: -0.035em; margin-bottom: 32px;
+animation: fadeUp 0.7s 0.1s ease both;
+}
+.hero h1 em { font-style: normal; color: var(–bright); }
+.hero-desc {
+font-family: var(–mono); font-size: clamp(13px, 1.6vw, 16px);
+color: var(–muted); max-width: 580px; line-height: 1.8;
+margin-bottom: 60px; animation: fadeUp 0.7s 0.2s ease both;
+}
+.hero-ctas {
+display: flex; gap: 14px; flex-wrap: wrap; justify-content: center;
+margin-bottom: 80px; animation: fadeUp 0.7s 0.3s ease both;
+}
+.btn {
+display: inline-flex; align-items: center; gap: 8px;
+font-family: var(–mono); font-size: 12px; font-weight: 500;
+letter-spacing: 0.07em; text-decoration: none;
+padding: 14px 30px; transition: all 0.2s; text-transform: uppercase;
+}
+.btn-primary { background: var(–blue); color: var(–white); border: 1px solid var(–bright); }
+.btn-primary:hover { background: var(–bright); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(37,99,235,0.35); }
+.btn-secondary { background: transparent; color: var(–muted); border: 1px solid var(–border); }
+.btn-secondary:hover { color: var(–white); border-color: rgba(59,130,246,0.35); background: rgba(37,99,235,0.07); }
+.patent-strip { display: flex; gap: 32px; flex-wrap: wrap; justify-content: center; animation: fadeUp 0.7s 0.4s ease both; }
+.patent-item { font-family: var(–mono); font-size: 11px; color: var(–dim); letter-spacing: 0.08em; text-transform: uppercase; }
+.patent-item span { color: var(–muted); }
+@keyframes fadeUp { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
+
+/* METRICS */
+.metrics-row {
+position: relative; z-index: 1;
+display: flex;
+border-top: 1px solid var(–border); border-bottom: 1px solid var(–border);
+background: rgba(11,16,32,0.7); backdrop-filter: blur(12px);
+}
+.metric { flex: 1; padding: 40px 32px; text-align: center; border-right: 1px solid var(–border); }
+.metric:last-child { border-right: none; }
+.metric-val { font-size: 40px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; margin-bottom: 8px; }
+.metric-val em { font-style: normal; color: var(–bright); }
+.metric-lbl { font-family: var(–mono); font-size: 10px; color: var(–dim); letter-spacing: 0.10em; text-transform: uppercase; line-height: 1.5; }
+
+/* SECTIONS */
+.section { position: relative; z-index: 1; max-width: 1120px; margin: 0 auto; padding: 110px 52px; }
+.section-label {
+font-family: var(–mono); font-size: 10px; color: var(–bright);
+letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 18px;
+display: flex; align-items: center; gap: 10px;
+}
+.section-label::before { content:’’; display:block; width:24px; height:1px; background:var(–bright); }
+.section-title { font-size: clamp(30px,4.5vw,52px); font-weight: 800; line-height: 1.05; letter-spacing: -0.025em; margin-bottom: 24px; }
+.section-body { font-family: var(–mono); font-size: 14px; color: var(–muted); line-height: 1.9; max-width: 660px; }
+
+/* FRAMEWORK GRID */
+.fw-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1px; background: var(–border); border: 1px solid var(–border); margin-top: 64px; }
+.fw-card { background: var(–card); padding: 40px 36px; transition: background 0.25s; }
+.fw-card:hover { background: rgba(37,99,235,0.07); }
+.fw-num { font-family: var(–mono); font-size: 10px; color: var(–blue); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 22px; }
+.fw-title { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 14px; }
+.fw-title em { font-style: normal; color: var(–bright); }
+.fw-body { font-family: var(–mono); font-size: 12px; color: var(–muted); line-height: 1.75; }
+.fw-eq { margin-top: 20px; padding: 14px 18px; background: rgba(8,12,24,0.8); border-left: 2px solid var(–blue); font-family: var(–mono); font-size: 13px; color: var(–glow); letter-spacing: 0.04em; }
+
+/* RIS */
+.ris-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 1px; background: var(–border); border: 1px solid var(–border); margin-top: 64px; }
+.ris-card { background: var(–card); padding: 28px 20px; text-align: center; transition: all 0.2s; }
+.ris-card:hover { background: rgba(37,99,235,0.09); transform: translateY(-3px); }
+.ris-badge { font-family: var(–mono); font-size: 22px; font-weight: 500; color: var(–bright); margin-bottom: 10px; }
+.ris-name { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(–white); margin-bottom: 8px; }
+.ris-range { font-family: var(–mono); font-size: 11px; color: var(–dim); }
+
+/* DIVIDER */
+hr.divider { position: relative; z-index: 1; border: none; border-top: 1px solid var(–border); }
+
+/* PAPERS */
+.papers-list { margin-top: 56px; border: 1px solid var(–border); display: flex; flex-direction: column; gap: 1px; background: var(–border); }
+.paper { background: var(–card); padding: 22px 32px; display: grid; grid-template-columns: 36px 1fr auto; align-items: center; gap: 20px; text-decoration: none; transition: background 0.2s; }
+.paper:hover { background: rgba(37,99,235,0.07); }
+.paper-n { font-family: var(–mono); font-size: 11px; color: var(–dim); }
+.paper-title { font-size: 14px; font-weight: 600; color: var(–white); line-height: 1.4; }
+.paper-arrow { font-size: 16px; color: var(–dim); transition: color 0.2s; }
+.paper:hover .paper-arrow { color: var(–bright); }
+
+/* CONTACT */
+.contact-block { position: relative; z-index: 1; border-top: 1px solid var(–border); background: rgba(11,16,32,0.5); text-align: center; padding: 100px 52px; }
+.contact-block h2 { font-size: clamp(28px,4vw,48px); font-weight: 800; letter-spacing: -0.025em; margin-bottom: 16px; }
+.contact-block p { font-family: var(–mono); font-size: 14px; color: var(–muted); margin-bottom: 44px; line-height: 1.7; }
+.contact-email { font-family: var(–mono); font-size: 18px; color: var(–bright); text-decoration: none; border-bottom: 1px solid var(–border); padding-bottom: 4px; transition: all 0.2s; display: inline-block; margin-bottom: 48px; }
+.contact-email:hover { color: var(–white); border-color: var(–bright); }
+.cta-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+/* FOOTER */
+footer { position: relative; z-index: 1; border-top: 1px solid var(–border); padding: 32px 52px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+.footer-left { font-family: var(–mono); font-size: 11px; color: var(–dim); line-height: 1.7; }
+.footer-links { display: flex; gap: 28px; }
+.footer-links a { font-family: var(–mono); font-size: 11px; color: var(–dim); text-decoration: none; letter-spacing: 0.05em; transition: color 0.2s; }
+.footer-links a:hover { color: var(–bright); }
+
+/* RESPONSIVE */
+@media(max-width:768px){
+nav{padding:16px 24px;}
+.nav-links{display:none;}
+.section{padding:72px 24px;}
+.metrics-row{flex-wrap:wrap;}
+.metric{min-width:50%;border-bottom:1px solid var(–border);}
+.fw-grid{grid-template-columns:1fr;}
+.ris-grid{grid-template-columns:repeat(3,1fr);}
+footer{padding:24px;flex-direction:column;align-items:flex-start;}
+.patent-strip{gap:16px;}
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">
+    <!-- LOGO: place your logo file in the same folder as index.html and name it logo.png -->
+    <img src="logo.png" alt="Atom Labs" onerror="this.style.display='none'">
+    <div class="nav-wordmark">ATOM<span>LABS</span></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#framework">Framework</a></li>
+    <li><a href="#ris">RIS v1.0</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-badge"><div class="dot"></div>Pre-Execution AI Governance — Production Validated</div>
+  <h1>The <em>Cognitive</em><br>Control Plane</h1>
+  <p class="hero-desc">
+    Govern AI reasoning before execution begins.<br>
+    Not output monitoring. Not prompt filtering.<br>
+    Authority resolved at the reasoning boundary. Every agent. Every action. Every time.
+  </p>
+  <div class="hero-ctas">
+    <a href="https://ris.atomlabs.app" target="_blank" class="btn btn-primary">Read RIS v1.0 Standard →</a>
+    <a href="https://researchgate.net/profile/Quinton-Stackfield" target="_blank" class="btn btn-secondary">Published Research</a>
+    <a href="https://github.com/qstackfield/atomlabs-lcac-framework" target="_blank" class="btn btn-secondary">GitHub</a>
+  </div>
+  <div class="patent-strip">
+    <div class="patent-item">Patent Pending <span>US 63/958,209</span></div>
+    <div class="patent-item">ORCID <span>0009-0002-7377-4165</span></div>
+    <div class="patent-item">Standard <span>RIS v1.0 — CC BY 4.0</span></div>
+    <div class="patent-item">Papers <span>11 Published</span></div>
+  </div>
+</div>
+
+<div class="metrics-row">
+  <div class="metric">
+    <div class="metric-val">28<em>–</em>43<em>ms</em></div>
+    <div class="metric-lbl">Full Round Trip<br>Governance Overhead</div>
+  </div>
+  <div class="metric">
+    <div class="metric-val">100<em>%</em></div>
+    <div class="metric-lbl">Pre-Execution<br>Authority Resolution</div>
+  </div>
+  <div class="metric">
+    <div class="metric-val">&lt;24<em>hr</em></div>
+    <div class="metric-lbl">Drift Detection<br>Window</div>
+  </div>
+  <div class="metric">
+    <div class="metric-val">100<em>%</em></div>
+    <div class="metric-lbl">Audit DAG<br>Completeness</div>
+  </div>
+</div>
+
+<div class="section" id="framework">
+  <div class="section-label">The Framework</div>
+  <h2 class="section-title">Zero Trust extended<br>to the cognitive layer</h2>
+  <p class="section-body">Zero Trust eliminated implicit trust at the network perimeter. The same principle applied one layer deeper requires that no AI reasoning process initiates without explicit pre-execution authorization. The perimeter moved. The framework moved with it.</p>
+  <div class="fw-grid">
+    <div class="fw-card">
+      <div class="fw-num">01 — Principle</div>
+      <div class="fw-title"><em>Authority</em>-Before-Execution</div>
+      <div class="fw-body">No reasoning process initiates without explicit pre-execution authorization resolved against current identity, capability, policy, and context. Not prompt filtering. Not output monitoring. Pre-execution governance at the cognitive layer.</div>
+    </div>
+    <div class="fw-card">
+      <div class="fw-num">02 — Enforcement</div>
+      <div class="fw-title"><em>LCAC</em> — Least-Context Access Control</div>
+      <div class="fw-body">Operationalizes the ABE principle through runtime enforcement. The permitted context is the minimum of three independent constraints — raw capability, policy allowance, and risk-adjusted ceiling.</div>
+      <div class="fw-eq">C_allowed = min(C_raw, C_policy, C_risk)</div>
+    </div>
+    <div class="fw-card">
+      <div class="fw-num">03 — Platform</div>
+      <div class="fw-title"><em>ATOM</em> — Cognitive Control Plane</div>
+      <div class="fw-body">Enterprise governance infrastructure across nine integrated subsystems: Cognitive Kernel, Provider Runtime, Model Registry, Memory Fabric, Governance Pipeline, Trust &amp; Drift Engine, Agent Runtime, Cluster Manager, Event Ledger.</div>
+    </div>
+    <div class="fw-card">
+      <div class="fw-num">04 — Standard</div>
+      <div class="fw-title"><em>RIS</em> v1.0 — Reasoning Integrity Standard</div>
+      <div class="fw-body">The first formal framework for measuring and certifying AI reasoning integrity. Five integrity levels. Six control families. 18 controls. Explicit formulas, conformance thresholds, and a full certification program.</div>
+      <div class="fw-eq">Composite = 0.30·S + 0.25·K + 0.20·F + 0.15·D + 0.10·V</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="section" id="ris">
+  <div class="section-label">Reasoning Integrity Standard</div>
+  <h2 class="section-title">Five integrity levels.<br>One formal standard.</h2>
+  <p class="section-body">RIS v1.0 defines what reasoning integrity means, how it is measured, what constitutes conformance, and how conformance is certified. Designed as a subordinate technical standard to NIST AI RMF, ISO/IEC 42001, and the EU AI Act.</p>
+  <div class="ris-grid">
+    <div class="ris-card"><div class="ris-badge">RIS-0</div><div class="ris-name">Uncontrolled</div><div class="ris-range">0.00 – 0.40</div></div>
+    <div class="ris-card"><div class="ris-badge">RIS-1</div><div class="ris-name">Monitored</div><div class="ris-range">0.41 – 0.60</div></div>
+    <div class="ris-card"><div class="ris-badge">RIS-2</div><div class="ris-name">Governed</div><div class="ris-range">0.61 – 0.75</div></div>
+    <div class="ris-card"><div class="ris-badge">RIS-3</div><div class="ris-name">Assured</div><div class="ris-range">0.76 – 0.89</div></div>
+    <div class="ris-card"><div class="ris-badge">RIS-4</div><div class="ris-name">Safety-Critical</div><div class="ris-range">0.90 – 1.00</div></div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="section" id="research">
+  <div class="section-label">Published Research</div>
+  <h2 class="section-title">11 papers.<br>One coherent framework.</h2>
+  <p class="section-body">The Stackfield (2026) series establishes the theoretical foundation, technical architecture, production validation, and formal measurement standard for pre-execution AI governance.</p>
+  <div class="papers-list">
+    <a href="https://doi.org/10.13140/RG.2.2.33692.76163" target="_blank" class="paper"><div class="paper-n">01</div><div class="paper-title">Authority-Before-Execution: A Pre-Authorization Architecture for Enterprise AI Governance</div><div class="paper-arrow">→</div></a>
+    <a href="https://researchgate.net/profile/Quinton-Stackfield" target="_blank" class="paper"><div class="paper-n">02</div><div class="paper-title">Never Trust, Always Govern: The Zero Trust Parallel for Enterprise AI Governance</div><div class="paper-arrow">→</div></a>
+    <a href="https://researchgate.net/profile/Quinton-Stackfield" target="_blank" class="paper"><div class="paper-n">03</div><div class="paper-title">The Cognitive Layer: Emergent Attack Surface of Governed AI Systems</div><div class="paper-arrow">→</div></a>
+    <a href="https://researchgate.net/profile/Quinton-Stackfield" target="_blank" class="paper"><div class="paper-n">04</div><div class="paper-title">ATOM: A Cognitive Control Plane Architecture for Governed AI Execution</div><div class="paper-arrow">→</div></a>
+    <a href="https://researchgate.net/profile/Quinton-Stackfield" target="_blank" class="paper"><div class="paper-n">05</div><div class="paper-title">VANTA OS: Authority-Before-Execution Governance in a Production Autonomous Capital Intelligence System</div><div class="paper-arrow">→</div></a>
+    <a href="https://researchgate.net/profile/Quinton-Stackfield" target="_blank" class="paper"><div class="paper-n">06</div><div class="paper-title">Cognitive Security Engineering: A Formal Discipline for the Governed AI Era</div><div class="paper-arrow">→</div></a>
+    <a href="https://researchgate.net/profile/Quinton-Stackfield" target="_blank" class="paper"><div class="paper-n">07</div><div class="paper-title">ATOM Enterprise Deployment Patterns</div><div class="paper-arrow">→</div></a>
+    <a href="https://researchgate.net/profile/Quinton-Stackfield" target="_blank" class="paper"><div class="paper-n">08</div><div class="paper-title">Governing AI at the Execution Layer: Regulatory Alignment</div><div class="paper-arrow">→</div></a>
+    <a href="https://researchgate.net/profile/Quinton-Stackfield" target="_blank" class="paper"><div class="paper-n">09</div><div class="paper-title">ARGUS: Physical Cognitive Security for the Governed AI Era</div><div class="paper-arrow">→</div></a>
+    <a href="https://doi.org/10.13140/RG.2.2.26911.42407" target="_blank" class="paper"><div class="paper-n">10</div><div class="paper-title">Reasoning Integrity Standard (RIS) v1.0: A Formal Framework for AI Reasoning Stability, Coherence, and Boundary Governance</div><div class="paper-arrow">→</div></a>
+    <a href="https://researchgate.net/profile/Quinton-Stackfield" target="_blank" class="paper"><div class="paper-n">11</div><div class="paper-title">From Network Perimeters to Reasoning Boundaries: Situating Pre-Execution AI Governance in the Zero Trust Tradition</div><div class="paper-arrow">→</div></a>
+  </div>
+</div>
+
+<div class="contact-block" id="contact">
+  <h2>Build on the standard.</h2>
+  <p>Enterprise deployments. Research collaboration. Certification inquiries.<br>If you're governing AI at the reasoning layer, let's talk.</p>
+  <a href="mailto:RIS@atomlabs.app" class="contact-email">RIS@atomlabs.app</a>
+  <div class="cta-row">
+    <a href="https://ris.atomlabs.app" target="_blank" class="btn btn-primary">RIS v1.0 Standard →</a>
+    <a href="https://researchgate.net/profile/Quinton-Stackfield" target="_blank" class="btn btn-secondary">ResearchGate</a>
+    <a href="https://github.com/qstackfield" target="_blank" class="btn btn-secondary">GitHub</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-left">
+    © 2026 Atom Labs. All Rights Reserved.<br>
+    Patent Pending: US 63/958,209 &nbsp;|&nbsp; ORCID: 0009-0002-7377-4165 &nbsp;|&nbsp; RIS v1.0 CC BY 4.0
+  </div>
+  <div class="footer-links">
+    <a href="https://ris.atomlabs.app" target="_blank">ris.atomlabs.app</a>
+    <a href="https://researchgate.net/profile/Quinton-Stackfield" target="_blank">ResearchGate</a>
+    <a href="https://github.com/qstackfield/atomlabs-lcac-framework" target="_blank">GitHub</a>
+    <a href="mailto:RIS@atomlabs.app">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
