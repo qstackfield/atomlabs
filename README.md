@@ -149,9 +149,6 @@ Building the governance infrastructure that autonomous AI systems require to ope
 **Contact:** qstackfield@gmail.com  
 **LinkedIn:** [linkedin.com/in/qstackfield](https://www.linkedin.com/in/qstackfield)  
 **GitHub:** [github.com/qstackfield](https://github.com/qstackfield)  
-**ORCID:** [0009-0002-7377-4165](https://orcid.org/0009-0002-7377-4165)  
-**Zenodo:** [DOI 10.5281/zenodo.17458835](https://doi.org/10.5281/zenodo.17458835)
-
 **ResearchGate:** https://www.researchgate.net/profile/Quinton-Stackfield
 
 ---
