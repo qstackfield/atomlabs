@@ -146,7 +146,6 @@ Cybersecurity Architect
 
 Building the governance infrastructure that autonomous AI systems require to operate safely in enterprise, regulated, and defense environments.
 
-**Contact:** qstackfield@gmail.com  
 **LinkedIn:** [linkedin.com/in/qstackfield](https://www.linkedin.com/in/qstackfield)  
 **GitHub:** [github.com/qstackfield](https://github.com/qstackfield)  
 **ResearchGate:** https://www.researchgate.net/profile/Quinton-Stackfield
