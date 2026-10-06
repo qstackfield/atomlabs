@@ -104,9 +104,7 @@ ABE enforces a single, binary, synchronous check at the only moment that cannot 
 
 By blocking unauthorized actions at execution time, ABE prevents invalid work from ever entering human workflows.
 
-In a standard demonstration run across 100 attempted actions:
-- 73 blocked at execution time
-- 73% of potential human review cycles eliminated
+The runnable demo (`python3 -m demo.run_productivity_proof` in [authority-before-execution](https://github.com/qstackfield/authority-before-execution)) generates 100 synthetic actions and gives 27% of them valid authority by default (`--valid-rate 0.27`). The other 73 are blocked at execution time. That 73 is set by the input, not measured on a real workload.
 - Each blocked action represents a ticket never created, a review that never happened, a meeting that never needed to be scheduled
 
 **Authority Before Execution does not replace human judgment. It prevents invalid work from ever reaching humans in the first place.**
